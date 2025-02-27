@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="icon" href="ramdani.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
+    <script src="https://kit.fontawesome.com/98721b54aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <h1>Formulir Pendaftaran</h1>
+    </nav>
+
+    <form action="" method="POST">
+        <!-- BIODATA DIRI -->
+        <fieldset>
+            <legend>Biodata Diri</legend>
+            <p class="p-bd">Masukkan data dibawah ini dengan benar!</p>
+            <div class="form-wrap">
+                <!-- Nama Depan -->
+                <div class="form">
+                    <p>Nama Depan</p>
+                    <input type="text" name="namaDepan" id="namaDepan" placeholder="Masukkan nama depan">
+                </div>
+                <!-- Nama Belakang -->
+                <div class="form">
+                    <p>Nama Belakang</p>
+                    <input type="text" name="namaBelakang" id="namaBelakang" placeholder="Masukkan nama belakang">
+                </div>
+                <!-- Jenis Kelamin -->
+                <div class="form-diff">
+                    <p>Jenis Kelamin</p>
+                    <div class="gender-wrap">
+                        <div class="gender">
+                            <input class="no-outline" type="radio" name="jenisKelamin" id="laki">
+                            <label for="laki">Laki-laki</label>
+                        </div>
+                        <div class="gender">
+                            <input class="no-outline" type="radio" name="jenisKelamin" id="perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tempat Lahir -->
+                <div class="form">
+                    <p>Tempat Lahir</p>
+                    <input type="text" name="tempatLahir" id="tempatLahir" placeholder="Masukkan tempat lahir">
+                </div>
+                <!-- Tanggal Lahir -->
+                <div class="form">
+                    <p>Tanggal Lahir</p>
+                    <input type="date" name="tanggalLahir" id="tanggalLahir">
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- ALAMAT LENGKAP -->
+        <fieldset>
+            <legend>Alamat Lengkap</legend>
+            <div class="form-wrap">
+                <!-- Provinsi -->
+                <div class="form">
+                    <p>Provinsi</p>
+                    <div class="dropdown">
+                        <select name="alamat" id="alamat">
+                            <option selected disabled>-- Pilih Provisi --</option>
+                            <option value="Duren Sawit">DKI Jakarta</option>
+                            <option value="Jatinegara">Jatinegara</option>
+                            <option value="Cakung">Cakung</option>
+                            <option value="Kramat Jati">Kramat Jati</option>
+                            <option value="Pulo Gadung">Pulo Gadung</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Kota -->
+                <div class="form">
+                    <p>Kota</p>
+                    <div class="dropdown">
+                        <select name="alamat" id="alamat">
+                            <option selected disabled>-- Pilih Kota --</option>
+                            <option value="Duren Sawit">Jakarta Timur</option>
+                            <option value="Jatinegara">Jakarta Utara</option>
+                            <option value="Cakung">Jakarta Pusat</option>
+                            <option value="Kramat Jati">Jakarta Barat</option>
+                            <option value="Pulo Gadung">Jakarta Selatan</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Kecamatan -->
+                <div class="form">
+                    <p>Kecamatan</p>
+                    <div class="dropdown">
+                        <select name="alamat" id="alamat">
+                            <option selected disabled>-- Pilih Kecamatan --</option>
+                            <option value="Duren Sawit">Duren Sawit</option>
+                            <option value="Jatinegara">Jatinegara</option>
+                            <option value="Cakung">Cakung</option>
+                            <option value="Kramat Jati">Kramat Jati</option>
+                            <option value="Pulo Gadung">Pulo Gadung</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Kelurahan -->
+                <div class="form">
+                    <p>Kelurahan</p>
+                    <div class="dropdown">
+                        <select name="alamat" id="alamat">
+                            <option selected disabled>-- Pilih Kelurahan --</option>
+                            <option value="Klender">Klender</option>
+                            <option value="Rawa Bunga">Rawa Bunga</option>
+                            <option value="Penggilingan">Penggilingan</option>
+                            <option value="Cawang">Cawang</option>
+                            <option value="Kayu Putih">Kayu Putih</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Alamat -->
+                <div class="form">
+                    <p>Alamat</p>
+                    <textarea name="alamat" id="alamat" placeholder="Alamat Lengkap"></textarea>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- AKUN -->
+        <fieldset>
+            <legend>Akun</legend>
+            <div class="form-wrap">
+                <!-- Email -->
+                <div class="form">
+                    <p>Email</p>
+                    <input type="text" name="email" id="email" placeholder="Masukkan Email Aktif">
+                </div>
+                <!-- Username -->
+                <div class="form">
+                    <p>Username</p>
+                    <input type="text" name="username" id="username" placeholder="Maksimal 10 Karakter">
+                </div>
+                <!-- Password -->
+                <div class="form">
+                    <p>Password</p>
+                    <input type="password" name="password" id="password" placeholder="Masukkan Password">
+                </div>
+                <!-- Password -->
+                <div class="form">
+                    <p>Confirm Password</p>
+                    <input type="password" name="password2" id="password2" placeholder="Masukkan Kembali Password">
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- SYARAT DAN KETENTUAN -->
+        <fieldset>
+            <legend>Syarat dan Ketentuan</legend>
+            <div class="form-diff">
+                <div class="form">
+                    <p class="p-bd">Dengan memilih "Setuju", Anda sudah mengikuti <a href="index.html">Syarat dan Ketentuan</a> yang berlaku.</p>
+                    <div class="setuju">
+                        <input type="checkbox" name="setuju" id="setuju">
+                        <label for="setuju">Setuju</label>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" name="submit">Daftar</button>
+                    <button type="reset" name="reset">Reset</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
