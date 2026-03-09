@@ -22,14 +22,14 @@ header {
 
 header h1 {
     font-family: 'Bricolage Grotesque';
-    font-size: clamp(2.5rem, 8vw, 10rem);
+    font-size: clamp(2.25rem, 8vw, 10rem);
     line-height: 0.75;
     color: #414243;
 }
 
 header h1::selection, header span::selection {background-color: transparent;}
 
-header span {font-size: clamp(10px, 2vw, 1.25rem);}
+header span {font-size: clamp(11px, 2vw, 1.25rem);}
 
 /* Form */
 form {
@@ -179,7 +179,11 @@ select {
     border: none;
     border-bottom: 1px solid #D1D2D3;
     appearance: none;
-    
+    background: none;
+    background-color: transparent;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
 }
 select:focus {
     outline: none;
