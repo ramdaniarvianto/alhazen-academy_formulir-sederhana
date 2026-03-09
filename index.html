@@ -3,172 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulir Pendaftaran</title>
-    <link rel="icon" href="ramdani.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
+    <title>Dangerous Site: Potential Phishing Ahead</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/98721b54aa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <h1>Formulir Pendaftaran</h1>
-    </nav>
+    <header>
+        <h1>Silence the questions<br>Fill the blanks <span>Don't stop until it's done</span></h1>
+    </header>
 
-    <form action="" method="POST">
-        <!-- BIODATA DIRI -->
-        <fieldset>
-            <legend>Biodata Diri</legend>
-            <p class="p-bd">Masukkan data dibawah ini dengan benar!</p>
-            <div class="form-wrap">
-                <!-- Nama Depan -->
-                <div class="form">
-                    <p>Nama Depan</p>
-                    <input type="text" name="namaDepan" id="namaDepan" placeholder="Masukkan nama depan">
+    <main>
+        <form>
+            <!-- Who are you? -->
+            <section>
+                <div class="left">
+                    <h2>Who are you?</h2>
                 </div>
-                <!-- Nama Belakang -->
-                <div class="form">
-                    <p>Nama Belakang</p>
-                    <input type="text" name="namaBelakang" id="namaBelakang" placeholder="Masukkan nama belakang">
-                </div>
-                <!-- Jenis Kelamin -->
-                <div class="form-diff">
-                    <p>Jenis Kelamin</p>
-                    <div class="gender-wrap">
-                        <div class="gender">
-                            <input class="no-outline" type="radio" name="jenisKelamin" id="laki">
-                            <label for="laki">Laki-laki</label>
+                <div class="right">
+                    <!-- Nama lengkap -->
+                    <div class="double">
+                        <!-- Nama depan -->
+                        <div class="row">
+                            <input type="text" name="nama-depan" id="nama-depan" placeholder="Ramdani" required>
+                            <label for="nama-depan">Nama Depan</label>
                         </div>
-                        <div class="gender">
-                            <input class="no-outline" type="radio" name="jenisKelamin" id="perempuan">
-                            <label for="perempuan">Perempuan</label>
+                        <!-- Nama belakang -->
+                        <div class="row">
+                            <input type="text" name="nama-belakang" id="nama-belakang" placeholder="Arvianto" required>
+                            <label for="nama-belakang">Nama Belakang</label>
                         </div>
                     </div>
+                    <!-- Nama panggilan -->
+                    <div class="single">
+                        <input type="text" name="nama-panggilan" id="nama-panggilan" placeholder="Ramdani" required>
+                        <label for="nama-panggilan">Nama Panggilan</label>
+                    </div>
+                    <!-- Jenis kelamin -->
+                    <div class="pair">
+                        <div class="match">
+                            <!-- Pria -->
+                            <div class="sex">
+                                <input type="radio" name="jenis-kelamin" id="laki" value="laki">
+                                <label for="laki">Laki-laki</label>
+                            </div>
+                            <!-- Wanita -->
+                            <div class="sex">
+                                <input type="radio" name="jenis-kelamin" id="perempuan" value="perempuan">
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+                        </div>
+                        <label for="jenis-kelamin">Jenis Kelamin</label>
+                    </div>
+                    <!-- Tanggal lahir -->
+                    <div class="single">
+                        <input type="date" name="tanggal-lahir" id="tanggal-lahir" required>
+                        <label for="tanggal-lahir">Tanggal Lahir</label>
+                    </div>
+                    <!-- Status -->
+                    <div class="single">
+                        <select name="status" id="status" required>
+                            <option value="" selected disabled hidden>Status</option>
+                            <option value="mahasiswa">Mahasiswa</option>
+                            <option value="bekerja">Bekerja</option>
+                            <option value="pencari-kerja">Pencari Kerja</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                        <label for="status">Status</label>
+                    </div>
                 </div>
-                <!-- Tempat Lahir -->
-                <div class="form">
-                    <p>Tempat Lahir</p>
-                    <input type="text" name="tempatLahir" id="tempatLahir" placeholder="Masukkan tempat lahir">
-                </div>
-                <!-- Tanggal Lahir -->
-                <div class="form">
-                    <p>Tanggal Lahir</p>
-                    <input type="date" name="tanggalLahir" id="tanggalLahir">
-                </div>
-            </div>
-        </fieldset>
+            </section>
 
-        <!-- ALAMAT LENGKAP -->
-        <fieldset>
-            <legend>Alamat Lengkap</legend>
-            <div class="form-wrap">
-                <!-- Provinsi -->
-                <div class="form">
-                    <p>Provinsi</p>
-                    <div class="dropdown">
-                        <select name="alamat" id="alamat">
-                            <option selected disabled>-- Pilih Provisi --</option>
-                            <option value="Duren Sawit">DKI Jakarta</option>
-                            <option value="Jatinegara">Jatinegara</option>
-                            <option value="Cakung">Cakung</option>
-                            <option value="Kramat Jati">Kramat Jati</option>
-                            <option value="Pulo Gadung">Pulo Gadung</option>
+            <!-- Where you live? -->
+            <section>
+                <div class="left">
+                    <h2>Where you live?</h2>
+                </div>
+                <div class="right">
+                    <!-- Negara -->
+                    <div class="single">
+                        <select name="negara" id="negara" required>
+                            <option value="" selected disabled hidden>Indonesia</option>
+                            <option value="indonesia">Indonesia</option>
+                            <option value="lainnya">Lainnya</option>
                         </select>
+                        <label for="negara">Negara</label>
+                    </div>
+                    <!-- Kota -->
+                    <div class="single">
+                        <select name="kota" id="kota" required>
+                            <option value="" selected disabled hidden>Jakarta</option>
+                            <option value="jakarta">Jakarta</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                        <label for="kota">Kota</label>
+                    </div>
+                    <!-- Alamat -->
+                    <div class="single">
+                        <textarea name="alamat" id="alamat" placeholder="Jl. Jalan RT/RW, Kelurahan, Kecamatan, Provinsi." required></textarea>
+                        <label for="alamat">Alamat Domisili</label>
+                    </div>
+                    <!-- Kode pos -->
+                    <div class="single">
+                        <input type="text" inputmode="numeric" name="kodepos" id="kodepos" placeholder="10110" min="10110" max="99974" maxlength="5" required>
+                        <label for="kodepos">Kode Pos</label>
                     </div>
                 </div>
-                <!-- Kota -->
-                <div class="form">
-                    <p>Kota</p>
-                    <div class="dropdown">
-                        <select name="alamat" id="alamat">
-                            <option selected disabled>-- Pilih Kota --</option>
-                            <option value="Duren Sawit">Jakarta Timur</option>
-                            <option value="Jatinegara">Jakarta Utara</option>
-                            <option value="Cakung">Jakarta Pusat</option>
-                            <option value="Kramat Jati">Jakarta Barat</option>
-                            <option value="Pulo Gadung">Jakarta Selatan</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- Kecamatan -->
-                <div class="form">
-                    <p>Kecamatan</p>
-                    <div class="dropdown">
-                        <select name="alamat" id="alamat">
-                            <option selected disabled>-- Pilih Kecamatan --</option>
-                            <option value="Duren Sawit">Duren Sawit</option>
-                            <option value="Jatinegara">Jatinegara</option>
-                            <option value="Cakung">Cakung</option>
-                            <option value="Kramat Jati">Kramat Jati</option>
-                            <option value="Pulo Gadung">Pulo Gadung</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- Kelurahan -->
-                <div class="form">
-                    <p>Kelurahan</p>
-                    <div class="dropdown">
-                        <select name="alamat" id="alamat">
-                            <option selected disabled>-- Pilih Kelurahan --</option>
-                            <option value="Klender">Klender</option>
-                            <option value="Rawa Bunga">Rawa Bunga</option>
-                            <option value="Penggilingan">Penggilingan</option>
-                            <option value="Cawang">Cawang</option>
-                            <option value="Kayu Putih">Kayu Putih</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- Alamat -->
-                <div class="form">
-                    <p>Alamat</p>
-                    <textarea name="alamat" id="alamat" placeholder="Alamat Lengkap"></textarea>
-                </div>
-            </div>
-        </fieldset>
+            </section>
 
-        <!-- AKUN -->
-        <fieldset>
-            <legend>Akun</legend>
-            <div class="form-wrap">
-                <!-- Email -->
-                <div class="form">
-                    <p>Email</p>
-                    <input type="text" name="email" id="email" placeholder="Masukkan Email Aktif">
+            <section>
+                <div class="left">
+                    <h2>Way to connect?</h2>
                 </div>
-                <!-- Username -->
-                <div class="form">
-                    <p>Username</p>
-                    <input type="text" name="username" id="username" placeholder="Maksimal 10 Karakter">
-                </div>
-                <!-- Password -->
-                <div class="form">
-                    <p>Password</p>
-                    <input type="password" name="password" id="password" placeholder="Masukkan Password">
-                </div>
-                <!-- Password -->
-                <div class="form">
-                    <p>Confirm Password</p>
-                    <input type="password" name="password2" id="password2" placeholder="Masukkan Kembali Password">
-                </div>
-            </div>
-        </fieldset>
-
-        <!-- SYARAT DAN KETENTUAN -->
-        <fieldset>
-            <legend>Syarat dan Ketentuan</legend>
-            <div class="form-diff">
-                <div class="form">
-                    <p class="p-bd">Dengan memilih "Setuju", Anda sudah mengikuti <a href="index.html">Syarat dan Ketentuan</a> yang berlaku.</p>
-                    <div class="setuju">
-                        <input type="checkbox" name="setuju" id="setuju">
-                        <label for="setuju">Setuju</label>
+                <div class="right">
+                    <!-- Email -->
+                    <div class="single">
+                        <input type="email" name="email" id="email" placeholder="ramdani@arvianto.com" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <!-- Username -->
+                    <div class="single">
+                        <input type="text" name="username" id="username" placeholder="ramdaniarvianto1" required>
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="single">
+                        <input type="password" name="password" id="password" placeholder="******************" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="single">
+                        <input type="password" name="cpassword" id="cpassword" placeholder="******************" required>
+                        <label for="cpassword">Confirm Password</label>
+                    </div>
+                    <div class="single">
+                        <button type="button" onclick="location.href='fonts/index.html'" class="libre">Done</button>
                     </div>
                 </div>
-                <div class="button">
-                    <button type="submit" name="submit">Daftar</button>
-                    <button type="reset" name="reset">Reset</button>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Contact -->
+        <div class="contact">
+            <h2>ramdani<span>@</span>arvianto.com</h2>
+            <h2>(<span>+</span>62) 589 0542 5276</h2>
+        </div>
+        <!-- Info -->
+        <div class="info">
+            <div class="info-left">
+                <div class="il">
+                    <p>Jakarta, Indonesia</p>
+                    <p>2024</p>
+                </div>
+                <div class="il">
+                    <p>04 <span style="font-family: 'Times New Roman';">/</span> <em>September</em> <span style="font-family: 'Times New Roman';">/</span> 2024</p>
                 </div>
             </div>
-        </fieldset>
-    </form>
+            <div class="info-right">
+                <p>Say hello <ins>Find me here</ins></p>
+            </div>
+        </div>
+        <!-- Submission -->
+        <div class="submission">
+            <div class="sub-left">
+                <p>Submission Tugas <a href="https://alhazen.academy/" target="_blank" title="https://alhazen.academy/">Alhazen Academy</a> Formulir Sederhana</p>
+            </div>
+            <div class="sub-right">
+                <a href="https://github.com/ramdaniarvianto" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ramdaniarvianto/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://youtube.com/@ramdaniarvianto?si=4gxTHmSt90PBY52g" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/ramdanlarvianto/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@ramdaniarvianto" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+    font-weight: normal;
+    font-size: 1rem;
+    color: #818283;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    background-color: #FFFFFF;
+}
+
+/* Header */
+header {
+    padding: 10px 2rem;
+}
+
+header h1 {
+    font-family: 'Bricolage Grotesque';
+    font-size: clamp(2.5rem, 8vw, 10rem);
+    line-height: 0.75;
+    color: #414243;
+}
+
+header span {font-size: clamp(10px, 2vw, 1.25rem);}
+
+/* Form */
+form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+/* Button */
+button {
+    padding: 10px 6rem;
+    display: none;
+    border: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+.single:has(input:not(:placeholder-shown)) + .single button {
+    display: block;
+    color: #818283;
+    background-color: #E1E2E388;
+}
+.single:has(input:not(:placeholder-shown)) ~ .single button:hover {background-color: #E1E2E3AA;}
+
+/* Section */
+section {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Left */
+.left {width: 40%;}
+
+/* Right */
+.right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Section left */
+.left h2::selection {background-color: transparent;}
+.left h2 {
+    cursor: default;
+    font-family: 'Libre Caslon Display';
+    font-size: 1.5rem;
+    color: #414243;
+}
+
+/* Single */
+.single {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+/* Double */
+.double {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.double .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+/* Pair */
+.pair {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.sex label {font-family: 'Manrope';}
+
+/* Match */
+.match {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Sex */
+.sex {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #D1D2D3;
+}
+input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #818283;
+}
+input::selection {background-color: transparent;}
+
+input::placeholder {color: #D1D2D3;}
+
+input[type="radio"] {accent-color: #818283;}
+input[type="radio"]:not(:checked) ~ label {color: #D1D2D3;}
+
+input[type="date"]:invalid {color: #D1D2D3;}
+input[type="date"]::-webkit-calendar-picker-indicator {background: none;}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    max-height: 10rem;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #D1D2D3;
+    resize: none;
+    field-sizing: content
+}
+textarea:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #818283;
+}
+textarea::placeholder {color: #D1D2D3;}
+textarea::selection {background-color: transparent;}
+
+/* Label */
+label::selection {background-color: transparent;}
+label {font-family: 'Libre Caslon Display';}
+
+/* Select */
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #D1D2D3;
+    appearance: none;
+    
+}
+select:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #818283;
+}
+select::selection {background-color: transparent;}
+
+select:invalid, select option[value=""] {color: #D1D2D3;}
+
+select option {color: #A1A2A3;}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+footer h2::selection, footer p::selection {background-color: transparent;}
+
+/* Contact */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact h2 {
+    font-family: 'Bricolage Grotesque';
+    font-weight: bold;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    color: #414243;
+}
+
+.contact span {
+    font-family: 'Times New Roman';
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    color: #414243;
+}
+
+/* Info */
+.info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.info-left, .info-right {width: 100%;}
+
+.info .info-left {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.info-left .il {
+    display: flex;
+    flex-direction: column;
+}
+
+.libre {font-family: 'Libre Caslon Display';}
+
+.info-right p {
+    text-align: end;
+}
+
+.info-right ins {
+    text-decoration: none;
+    border-bottom: 1px solid #818283;
+}
+
+/* Submission */
+.submission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-left a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sub-right {
+    display: flex;
+    align-items: center;
+    gap: 1.35rem;
+}
+
+.sub-right a:hover i {color: #414243;}
+
+/* Responsive */
+@media (max-width: 1028px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 896px) {
+    /* Body */
+    body {
+        display: flex;
+        gap: 1rem;
+    }
+
+    /* Header */
+    header {padding: 1rem;}
+
+    header h1 {line-height: 1;}
+
+    /* Form */
+    form {
+        padding: 1rem;
+        display: flex;
+        gap: 4rem;
+    }
+
+    /* Section */
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* Double */
+    .double {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section .left, section .right {width: 100%;}
+
+    /* Textarea */
+    textarea::placeholder {text-wrap: nowrap;}
+
+    /* Footer */
+    footer {padding: 1rem;}
+
+    /* Info */
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .info-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .info-left .il {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info-right p {text-align: center;}
+
+    /* Submission */
+    .submission {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .sub-left p {text-align: center;}
+}
