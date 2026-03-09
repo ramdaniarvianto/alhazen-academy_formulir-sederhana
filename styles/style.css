@@ -134,6 +134,12 @@ input {
     padding: 10px;
     border: none;
     border-bottom: 1px solid #D1D2D3;
+    appearance: none;
+    background: none;
+    background-color: transparent;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
 }
 input:focus {
     outline: none;
@@ -165,7 +171,11 @@ textarea:focus {
     border: none;
     border-bottom: 1px solid #818283;
 }
-textarea::placeholder {color: #D1D2D3;}
+textarea::placeholder {
+    color: #D1D2D3;
+    text-wrap: nowrap;
+    scrollbar-width: none;
+}
 textarea::selection {background-color: transparent;}
 
 /* Label */
@@ -319,9 +329,6 @@ footer h2::selection, footer p::selection {background-color: transparent;}
     }
 
     section .left, section .right {width: 100%;}
-
-    /* Textarea */
-    textarea::placeholder {text-wrap: nowrap;}
 
     /* Footer */
     footer {padding: 1rem;}
