@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+    font-weight: normal;
+    color: #616263;
+}
+
+body {background-color: #040506;}
+
+/* Colors */
+.white {color: #F1F2F3;}
+.blue {color: #569CD6;}
+.lightblue {color: #9CDCFE;}
+.cream {color: #FF9987;}
+
+@keyframes fontColor {
+    0% {
+        color: transparent;
+        background: linear-gradient(to right, #F1F2F3, #616263, #616263, #616263, #616263, #616263);
+        background-clip: text;
+    }
+    10% {
+        color: transparent;
+        background: linear-gradient(to right, #616263, #F1F2F3, #616263, #616263, #616263, #616263);
+        background-clip: text;
+    }
+    20% {
+        color: transparent;
+        background: linear-gradient(to right, #616263, #616263, #F1F2F3, #616263, #616263, #616263);
+        background-clip: text;
+    }
+    30% {
+        color: transparent;
+        background: linear-gradient(to right, #616263, #616263, #616263, #F1F2F3, #616263, #616263);
+        background-clip: text;
+    }
+    40% {
+        color: transparent;
+        background: linear-gradient(to right, #616263, #616263, #616263, #616263, #F1F2F3, #616263);
+        background-clip: text;
+    }
+    50% {
+        color: transparent;
+        background: linear-gradient(to right, #616263, #616263, #616263, #616263, #616263, #F1F2F3);
+        background-clip: text;
+    }
+    60% {
+        color: transparent;
+        background: linear-gradient(to right, #616263, #616263, #616263, #616263, #616263, #616263);
+        background-clip: text;
+    }
+    70% {
+        color: transparent;
+        background: linear-gradient(to right, #616263, #616263, #616263, #616263, #616263, #616263);
+        background-clip: text;
+    }
+    80% {
+        color: transparent;
+        background: linear-gradient(to right, #616263, #616263, #616263, #616263, #616263, #616263);
+        background-clip: text;
+    }
+    90% {
+        color: transparent;
+        background: linear-gradient(to right, #616263, #616263, #616263, #616263, #616263, #616263);
+        background-clip: text;
+    }
+    100% {
+        color: transparent;
+        background: linear-gradient(to right, #616263, #616263, #616263, #616263, #616263, #616263);
+        background-clip: text;
+    }
+}
+
+/* Fonts */
+.manrope {font-family: 'Manrope';}
+.bricolagegrotesque {font-family: 'Bricolage Grotesque';}
+.funneldisplay {font-family: 'Funnel Display';}
+.zalandosanssemiexpanded {font-family: 'Zalando Sans SemiExpanded';}
+.montserrat {font-family: 'Montserrat';}
+.syne {font-family: 'Syne';}
+.monasans {font-family: 'Mona Sans';}
+.instrumentserif {font-family: 'Instrument Serif';}
+.librecaslondisplay {font-family: 'Libre Caslon Display';}
+.gupter {font-family: 'Gupter';}
+.herrvonmuellerhoff {font-family: 'herrvonmuellerhoff';}
+.dmseriftext {font-family: 'DM Serif Text';}
+.licorice {font-family: 'Licorice';}
+.bonheurroyale {font-family: 'Bonheur Royale';}
+.lavishlyyours {font-family: 'Lavishly Yours';}
+.doto {font-family: 'Doto';}
+.codystar {font-family: 'Codystar';}
+.englebert {font-family: 'Englebert';}
+.dynapuff {font-family: 'DynaPuff';}
+.rubikspraypaint {font-family: 'Rubik Spray Paint';}
+.climatecrisis {font-family: 'Climate Crisis';}
+.boldonse {font-family: 'Boldonse';}
+
+/* Header */
+header {
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+header p {
+    text-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    line-height: 1.8;
+}
+
+header p::selection, section p::selection {background-color: #F1F2F333;}
+
+/* Main */
+main {
+    width: 70%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+/* Details */
+details[open] summary {border-radius: 8px 8px 0 0;}
+
+details[open] summary p {
+    display: inline-block;
+    color: transparent;
+    background: linear-gradient(to right, #616263, #616263, #616263, #616263, #616263, #616263);
+    background-clip: text;
+    animation: fontColor 1s linear infinite;
+}
+
+/* Summary */
+summary {
+    cursor: pointer;
+    padding: 1rem;
+    list-style: none;
+    background-color: #212121;
+    border-radius: 8px;
+}
+
+summary p::selection, summary h2::selection {background-color: transparent;}
+
+summary h2 {
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    color: #F1F2F3;
+}
+
+/* Section */
+section {
+    padding: 10px 1rem;
+    background-color: #121212;
+    border-radius: 0 0 8px 8px;
+}
+
+section p {
+    text-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 1028px) {
+    main, header {width: 100%;}
+
+    header, main {padding: 0 1rem;}
+}
