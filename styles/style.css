@@ -317,6 +317,9 @@ footer h2::selection, footer p::selection {background-color: transparent;}
         gap: 4rem;
     }
 
+    /* Button */
+    button {width: 100%;}
+
     /* Section */
     section {
         display: flex;
