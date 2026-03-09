@@ -27,6 +27,8 @@ header h1 {
     color: #414243;
 }
 
+header h1::selection, header span::selection {background-color: transparent;}
+
 header span {font-size: clamp(10px, 2vw, 1.25rem);}
 
 /* Form */
