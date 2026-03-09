@@ -166,7 +166,8 @@ textarea {
     border: none;
     border-bottom: 1px solid #D1D2D3;
     resize: none;
-    field-sizing: content
+    field-sizing: content;
+    scrollbar-width: none;
 }
 textarea:focus {
     outline: none;
@@ -176,7 +177,6 @@ textarea:focus {
 textarea::placeholder {
     color: #D1D2D3;
     text-wrap: nowrap;
-    scrollbar-width: none;
 }
 textarea::selection {background-color: transparent;}
 
