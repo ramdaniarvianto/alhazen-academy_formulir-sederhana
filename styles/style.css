@@ -134,12 +134,6 @@ input {
     padding: 10px;
     border: none;
     border-bottom: 1px solid #D1D2D3;
-    appearance: none;
-    background: none;
-    background-color: transparent;
-    border-radius: 0;
-    outline: none;
-    box-shadow: none;
 }
 input:focus {
     outline: none;
@@ -153,6 +147,14 @@ input::placeholder {color: #D1D2D3;}
 input[type="radio"] {accent-color: #818283;}
 input[type="radio"]:not(:checked) ~ label {color: #D1D2D3;}
 
+input[type="date"] {
+    appearance: none;
+    background: none;
+    background-color: transparent;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
 input[type="date"]:invalid {color: #D1D2D3;}
 input[type="date"]::-webkit-calendar-picker-indicator {background: none;}
 
