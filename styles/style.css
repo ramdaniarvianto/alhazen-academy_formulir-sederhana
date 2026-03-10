@@ -358,6 +358,8 @@ footer h2::selection, footer p::selection {background-color: transparent;}
         flex-direction: row;
     }
 
+    .info-left .il:first-child p:last-child {display: none;}
+
     .info-right p {text-align: center;}
 
     /* Submission */
