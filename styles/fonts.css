@@ -76,19 +76,13 @@ body {background-color: #040506;}
 /* Fonts */
 .manrope {font-family: 'Manrope';}
 .bricolagegrotesque {font-family: 'Bricolage Grotesque';}
-.funneldisplay {font-family: 'Funnel Display';}
 .zalandosanssemiexpanded {font-family: 'Zalando Sans SemiExpanded';}
 .montserrat {font-family: 'Montserrat';}
-.syne {font-family: 'Syne';}
-.monasans {font-family: 'Mona Sans';}
+.poppins {font-family: 'Poppins';}
 .instrumentserif {font-family: 'Instrument Serif';}
 .librecaslondisplay {font-family: 'Libre Caslon Display';}
-.gupter {font-family: 'Gupter';}
-.herrvonmuellerhoff {font-family: 'herrvonmuellerhoff';}
+.librecaslontext {font-family: 'Libre Caslon Text';}
 .dmseriftext {font-family: 'DM Serif Text';}
-.licorice {font-family: 'Licorice';}
-.bonheurroyale {font-family: 'Bonheur Royale';}
-.lavishlyyours {font-family: 'Lavishly Yours';}
 .doto {font-family: 'Doto';}
 .codystar {font-family: 'Codystar';}
 .englebert {font-family: 'Englebert';}
@@ -126,7 +120,6 @@ main {
 details[open] summary {border-radius: 8px 8px 0 0;}
 
 details[open] summary p {
-    display: inline-block;
     color: transparent;
     background: linear-gradient(to right, #616263, #616263, #616263, #616263, #616263, #616263);
     background-clip: text;
