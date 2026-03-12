@@ -120,6 +120,7 @@ main {
 details[open] summary {border-radius: 8px 8px 0 0;}
 
 details[open] summary p {
+    display: inline-block;
     color: transparent;
     background: linear-gradient(to right, #616263, #616263, #616263, #616263, #616263, #616263);
     background-clip: text;
